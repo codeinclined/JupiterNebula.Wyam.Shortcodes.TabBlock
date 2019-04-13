@@ -1,4 +1,4 @@
-﻿trigger:
+trigger:
 - master
 
 pool:
@@ -7,13 +7,9 @@ pool:
 variables:
   Major: '1'
   Minor: '0'
-  Patch: '0'
 
 steps:
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
   inputs:
-    command: pack
-    packagesToPack: '**/*TabBlock.csproj'
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
+    command: 'pack'
+    versioningScheme: 'byBuildNumber'
