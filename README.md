@@ -2,7 +2,7 @@
 ======================================
 
 TabBlock provides a shortcode for [Wyam](https://wyam.io)'s Markdown module
-which renders HTML for a Bootstrap-compatible tab block, as shown below:
+to render Bootstrap-compatible tabs and tab panes in your Markdown pages.
 
 ![Output Demonstration](/assets/TabBlock/demo.gif)
 

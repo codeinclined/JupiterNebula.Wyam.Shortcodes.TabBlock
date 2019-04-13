@@ -1,0 +1,19 @@
+﻿trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  Major: '1'
+  Minor: '0'
+  Patch: '0'
+
+steps:
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*TabBlock.csproj'
+    majorVersion: '$(Major)'
+    minorVersion: '$(Minor)'
+    patchVersion: '$(Patch)'

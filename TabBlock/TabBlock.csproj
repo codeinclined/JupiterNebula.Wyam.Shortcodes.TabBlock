@@ -2,11 +2,30 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>JupiterNebula.Wyam.Shortcodes.TabBlock</RootNamespace>
+    <PackageId>JupiterNebula.Wyam.Shortcodes.TabBlock</PackageId>
+    <Authors>Joshua William Taylor &lt;taylor.joshua88@gmail.com&gt;</Authors>
+    <Company>JupiterNebula</Company>
+    <Product>JupiterNebula.Wyam.Shortcodes</Product>
+    <Description>Shortcode to be used with Wyam's Markdown module to render Bootstrap-compatible tabs and tab panes in your Markdown pages.</Description>
+    <Copyright>2019</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/taylorjoshuaw/JupiterNebula.Wyam.Shortcodes.TabBlock</PackageProjectUrl>
+    <PackageIconUrl>https://jupiternebula.com/favicon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/taylorjoshuaw/JupiterNebula.Wyam.Shortcodes.TabBlock</RepositoryUrl>
+    <PackageTags>wyam, shortcode, markdown</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="shortid" Version="2.0.0" />
     <PackageReference Include="Wyam.Common" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
