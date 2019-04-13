@@ -1,3 +1,19 @@
+/*
+   Copyright 2019 Joshua William Taylor <taylor.joshua88@gmail.com>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -120,7 +136,7 @@ namespace JupiterNebula.Wyam.Shortcodes.TabBlock
         }
         #endregion
 
-        #region Tab Content
+        #region Tab Panes
         /// <summary>
         /// Creates a Bootstrap-compatible tab pane as a div element containing <paramref name="contentNodes"/>
         /// </summary>
@@ -233,7 +249,7 @@ namespace JupiterNebula.Wyam.Shortcodes.TabBlock
             catch (XmlException e)
             {
                 throw new ArgumentException(
-                    $"{nameof(TabBlock)} shortcode requires Markdown content that can render to a valid XHTML element.",
+                    $"{nameof(TabBlock)} shortcode requires Markdown content that can be rendered into a valid XHTML element.",
                     nameof(content), e);
             }
 
