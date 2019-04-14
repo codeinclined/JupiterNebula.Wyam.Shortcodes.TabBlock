@@ -33,6 +33,7 @@ The easiest way to define tabs and tab pane content is by creating an unordered
 list in Markdown syntax between the opening and closing tag for the TabBlock
 shortcode as shown below:
 
+#### Markdown
 ```markdown
 <?# TabBlock ?>
 - ::Tab Label 1::
@@ -45,6 +46,39 @@ shortcode as shown below:
   # Tab Pane Header
   Lorem ipsum...
 <?#/ TabBlock ?>
+```
+#### Rendered HTML (formatted by VSCode)
+```html
+<div class="tab-block" id="TabBlock__PabWwGf5">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item"><a class="nav-link active" data-toggle="tab" aria-selected="true"
+                aria-controls="TabBlock__PabWwGf5-0-pane" href="#TabBlock__PabWwGf5-0-pane"
+                id="TabBlock__PabWwGf5-0-link"><span>Tab Label 1</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" aria-selected="false"
+                aria-controls="TabBlock__PabWwGf5-1-pane" href="#TabBlock__PabWwGf5-1-pane"
+                id="TabBlock__PabWwGf5-1-link"><span>Tab <em>Label</em> 2 with
+                    <em><strong>formatting</strong></em></span></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" aria-selected="false"
+                aria-controls="TabBlock__PabWwGf5-2-pane" href="#TabBlock__PabWwGf5-2-pane"
+                id="TabBlock__PabWwGf5-2-link"><img src="https://jupiternebula.com/favicon.png" class="img-fluid"
+                    style="max-height: 1em; padding: 0;" alt="Labels Can Be Images"></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane show active" role="tabpanel" aria-labelledby="TabBlock__PabWwGf5-0-link"
+            id="TabBlock__PabWwGf5-0-pane">
+            All content here will be placed in the tab pane for this tab.</div>
+        <div class="tab-pane" role="tabpanel" aria-labelledby="TabBlock__PabWwGf5-1-link"
+            id="TabBlock__PabWwGf5-1-pane">
+            Any <em>valid</em><a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
+            can be put <strong>here</strong> as long as each line is indented so as to be included in
+            the Markdown list item.</div>
+        <div class="tab-pane" role="tabpanel" aria-labelledby="TabBlock__PabWwGf5-2-link"
+            id="TabBlock__PabWwGf5-2-pane">
+            <h1 id="tab-pane-header">Tab Pane Header</h1>
+            Lorem ipsum...
+        </div>
+    </div>
+</div>
 ```
 
 Each tab above is represented as a Markdown list item. The
@@ -61,9 +95,9 @@ doesn't get mixed up with the tab pane's content and that it doesn't get cut off
 you add formatting to your label (such as the second tab above). The third tab's label
 didn't need to be wrapped because the first node in that case is an `<a>` element and not just text.
 
-### Examples
+## Examples
 
-#### FizzBuzz in C#, F#, and Rust
+### FizzBuzz in C#, F#, and Rust
 
 Including code snippets in multiple languages is pretty common on software development blogs
 and documentation pages. The following example presents implementations of FizzBuzz
