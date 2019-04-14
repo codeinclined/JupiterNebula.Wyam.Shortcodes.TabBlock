@@ -61,7 +61,7 @@ shortcode as shown below:
         <li class="nav-item"><a class="nav-link" data-toggle="tab" aria-selected="false"
                 aria-controls="TabBlock__PabWwGf5-2-pane" href="#TabBlock__PabWwGf5-2-pane"
                 id="TabBlock__PabWwGf5-2-link"><img src="https://jupiternebula.com/favicon.png" class="img-fluid"
-                    style="max-height: 1em; padding: 0;" alt="Labels Can Be Images"></a></li>
+                    style="max-height: 1em;" alt="Labels Can Be Images"></a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane show active" role="tabpanel" aria-labelledby="TabBlock__PabWwGf5-0-link"
