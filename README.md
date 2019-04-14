@@ -97,12 +97,15 @@ didn't need to be wrapped because the first node in that case is an `<a>` elemen
 
 ## Examples
 
-### FizzBuzz in C#, F#, and Rust
+### FizzBuzz in C++, F#, and Rust
 
 Including code snippets in multiple languages is pretty common on software development blogs
 and documentation pages. The following example presents implementations of FizzBuzz
 from [rosettacode.org](https://rosettacode.org/wiki/FizzBuzz) for multiple languages
-as separate tabs. 
+as separate tabs.
+
+_A demonstration of this in action is found at the top of this document_
+
 ````markdown
 <?# TabBlock ?>
 - C++
