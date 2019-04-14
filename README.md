@@ -1,6 +1,6 @@
 ﻿JupiterNebula.Wyam.Shortcodes.TabBlock
 ======================================
-![Nuget](https://img.shields.io/nuget/v/JupiterNebula.Wyam.Shortcodes.TabBlock.svg)
+[![Nuget](https://img.shields.io/nuget/v/JupiterNebula.Wyam.Shortcodes.TabBlock.svg)](https://www.nuget.org/packages/JupiterNebula.Wyam.Shortcodes.TabBlock/)
 
 TabBlock provides a shortcode for [Wyam](https://wyam.io)'s Markdown module
 to render Bootstrap-compatible tabs and tab panes in your Markdown pages.
