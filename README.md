@@ -60,9 +60,6 @@ As such, wrapping the label's text (in a `<span>` in the example above) makes su
 doesn't get mixed up with the tab pane's content and that it doesn't get cut off if
 you add formatting to your label (such as the second tab above). The third tab's label
 didn't need to be wrapped because the first node in that case is an `<a>` element and not just text.
-Likewise, if your tab pane's content starts with an HTML element rather than just text, you
-can safely use tab labels without having to wrap them (as you will see in the 
-[examples](#Examples) section of this document).
 
 ### Examples
 
