@@ -38,8 +38,8 @@ shortcode as shown below:
 - ::Tab Label 1::
   All content here will be placed in the tab pane for this tab.
 - ::Tab _Label_ 2 with ___formatting___::
-  Any _valid_ [Markdown](https://daringfireball.net/projects/markdown/syntax)
-  can be put __here__ as long as each line is indented so as to be included in
+  Any _valid_ [Markdown](https://daringfireball.net/projects/markdown/syntax) can
+  be put __here__ as long as each line is indented so as to be included in
   the Markdown list item.
 - ![Labels Can Be Images](https://jupiternebula.com/favicon.png){style="max-height: 1em;"}
   # Tab Pane Header
@@ -47,8 +47,8 @@ shortcode as shown below:
 <?#/ TabBlock ?>
 ```
 
-Each tab above is represented as a Markdown list item. If you noticed, the
-labels come at the beginning of each item, wrapped in a
+Each tab above is represented as a Markdown list item. The
+labels in this example come at the beginning of each item, wrapped in a
 [MarkDig custom container](https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/CustomContainerSpecs.md).
 It is not required to wrap your tab labels, but it is good practice to do so.
 This is because TabBlock receives your content after it has already been rendered into HTML and
