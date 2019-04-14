@@ -41,7 +41,7 @@ shortcode as shown below:
   Any _valid_ [Markdown](https://daringfireball.net/projects/markdown/syntax)
   can be put __here__ as long as each line is indented so as to be included in
   the Markdown list item.
-- ![Labels Can Be Images](https://jupiternebula.com/favicon.png)
+- ![Labels Can Be Images](https://jupiternebula.com/favicon.png){style="max-height: 1em;"}
   # Tab Pane Header
   Lorem ipsum...
 <?#/ TabBlock ?>
